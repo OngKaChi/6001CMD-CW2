@@ -1,0 +1,33 @@
+{
+  "approach": "three-fold cross-validation using only the 40,000-row training split; binary churn, Logistic Regression; exploratory comparison, not final model-selection results",
+  "results": {
+    "without_engineered_features": {
+      "roc_auc": 0.78894,
+      "f1": 0.52388,
+      "precision": 0.69124,
+      "recall": 0.4218,
+      "elapsed_seconds": 0.76
+    },
+    "with_engineered_features_robust_scaler": {
+      "roc_auc": 0.79522,
+      "f1": 0.54258,
+      "precision": 0.69726,
+      "recall": 0.44412,
+      "elapsed_seconds": 0.76
+    },
+    "with_engineered_features_standard_scaler": {
+      "roc_auc": 0.79519,
+      "f1": 0.54253,
+      "precision": 0.69669,
+      "recall": 0.44429,
+      "elapsed_seconds": 0.72
+    },
+    "with_engineered_features_balanced_logistic": {
+      "roc_auc": 0.79506,
+      "f1": 0.60381,
+      "precision": 0.51556,
+      "recall": 0.72855,
+      "elapsed_seconds": 0.81
+    }
+  }
+}
